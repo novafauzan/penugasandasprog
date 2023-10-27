@@ -1,5 +1,5 @@
 import streamlit as st
-import math_operations
+import math_operations as mo
 
 st.title("Simple Calculator")
 
@@ -13,14 +13,14 @@ result = None
 
 if st.button("Calculate"):
     if operation == "Add":
-        result = math_operations.add(x, y)
+        result = mo.add(x, y)
     elif operation == "Subtract":
-        result = math_operations.subtract(x, y)
+        result = mo.subtract(x, y)
     elif operation == "Multiply":
-        result = math_operations.multiply(x, y)
+        result = mo.multiply(x, y)
     elif operation == "Divide":
         try:
-            result = math_operations.divide(x, y)
+            result = mo.divide(x, y)
         except ZeroDivisionError:
             st.error("Division by zero is not allowed.")
 
