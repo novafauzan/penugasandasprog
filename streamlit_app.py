@@ -1,5 +1,5 @@
 import streamlit as st
-import math_operations as mo
+import matho as mo
 
 st.title("Simple Calculator")
 
